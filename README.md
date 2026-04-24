@@ -50,7 +50,7 @@ Where:
 
 ```
 ├── main.py              # Complete training & evaluation script
-├── data/                # CIFAR-10 dataset (auto-downloaded)
+├── data/                # CIFAR-10 dataset (from torchvision)
 ├── README.md            # Project documentation
 ```
 
