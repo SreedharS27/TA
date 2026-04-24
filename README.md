@@ -66,10 +66,6 @@ pip install torch torchvision matplotlib
 
 ##  Usage
 
-```bash
-python main.py
-```
-
 The script will:
 
 1. Train models for different λ values
@@ -79,17 +75,6 @@ The script will:
 
 ---
 
-##  Results
-
-| Lambda | Test Accuracy (%) | Sparsity (%) |
-| ------ | ----------------- | ------------ |
-| 1e-5   | 72.4              | 12.3         |
-| 1e-4   | 69.8              | 38.7         |
-| 1e-3   | 61.2              | 71.5         |
-
-> ⚠️ Results may vary depending on training epochs and hardware.
-
----
 
 ##  Observations
 
@@ -121,31 +106,3 @@ This confirms successful **self-pruning behavior**.
 
 ---
 
-##  Future Improvements
-
-* Replace fully connected layers with CNNs
-* Hard pruning (convert to smaller model)
-* Use L0 regularization / Gumbel-softmax gates
-* Apply to larger datasets (e.g., ImageNet)
-
----
-
-## Interview Insight
-
-> This project demonstrates how neural networks can **adapt their own architecture during training**, enabling efficient deployment under resource constraints.
-
----
-
-## License
-
-This project is open-source and available under the MIT License.
-
----
-
-## Acknowledgements
-
-* PyTorch
-* CIFAR-10 Dataset
-* Deep Learning research on pruning techniques
-
----
