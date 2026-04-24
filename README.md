@@ -1,6 +1,6 @@
-# 🧠 Self-Pruning Neural Network (PyTorch)
+## Self-Pruning Neural Network (PyTorch)
 
-## 📌 Overview
+## Overview
 
 This project implements a **self-pruning neural network** that learns to remove its own unnecessary weights **during training**, instead of relying on post-processing pruning techniques.
 
@@ -8,18 +8,18 @@ The model is trained on the **CIFAR-10 dataset** and uses a novel mechanism wher
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-* ✅ Custom `PrunableLinear` layer (built from scratch)
-* ✅ Learnable gating mechanism using sigmoid
-* ✅ Automatic pruning during training
-* ✅ L1-based sparsity regularization
-* ✅ Trade-off analysis between accuracy and sparsity
-* ✅ Visualization of gate distribution
+*  Custom `PrunableLinear` layer (built from scratch)
+*  Learnable gating mechanism using sigmoid
+*  Automatic pruning during training
+*  L1-based sparsity regularization
+*  Trade-off analysis between accuracy and sparsity
+*  Visualization of gate distribution
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 Each weight `w` is paired with a learnable gate `g`:
 
@@ -34,7 +34,7 @@ Where:
 
 ---
 
-## 📉 Loss Function
+##  Loss Function
 
 [
 \text{Total Loss} = \text{CrossEntropyLoss} + \lambda \cdot \sum \text{gates}
@@ -46,7 +46,7 @@ Where:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 ├── main.py              # Complete training & evaluation script
@@ -56,7 +56,7 @@ Where:
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ```bash
 git clone https://github.com/your-username/self-pruning-nn.git
@@ -66,7 +66,7 @@ pip install torch torchvision matplotlib
 
 ---
 
-## ▶️ Usage
+##  Usage
 
 ```bash
 python main.py
@@ -81,7 +81,7 @@ The script will:
 
 ---
 
-## 📊 Results
+##  Results
 
 | Lambda | Test Accuracy (%) | Sparsity (%) |
 | ------ | ----------------- | ------------ |
@@ -93,17 +93,17 @@ The script will:
 
 ---
 
-## 📈 Observations
+##  Observations
 
-* 🔹 Low λ → High accuracy, low pruning
-* 🔹 Medium λ → Balanced performance
-* 🔹 High λ → High sparsity, lower accuracy
+*  Low λ → High accuracy, low pruning
+*  Medium λ → Balanced performance
+*  High λ → High sparsity, lower accuracy
 
 This demonstrates the **sparsity–accuracy trade-off**.
 
 ---
 
-## 📊 Gate Distribution
+## Gate Distribution
 
 After training, the gate values typically show:
 
@@ -114,7 +114,7 @@ This confirms successful **self-pruning behavior**.
 
 ---
 
-## 🧪 Key Concepts
+## Key Concepts
 
 * **Dynamic pruning** (during training)
 * **L1 regularization for sparsity**
@@ -123,7 +123,7 @@ This confirms successful **self-pruning behavior**.
 
 ---
 
-## 🔍 Future Improvements
+##  Future Improvements
 
 * Replace fully connected layers with CNNs
 * Hard pruning (convert to smaller model)
@@ -132,19 +132,19 @@ This confirms successful **self-pruning behavior**.
 
 ---
 
-## 💡 Interview Insight
+## Interview Insight
 
 > This project demonstrates how neural networks can **adapt their own architecture during training**, enabling efficient deployment under resource constraints.
 
 ---
 
-## 📜 License
+## License
 
 This project is open-source and available under the MIT License.
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
 * PyTorch
 * CIFAR-10 Dataset
