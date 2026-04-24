@@ -59,8 +59,6 @@ Where:
 ##  Installation
 
 ```bash
-git clone https://github.com/your-username/self-pruning-nn.git
-cd self-pruning-nn
 pip install torch torchvision matplotlib
 ```
 
